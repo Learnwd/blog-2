@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap 4 Website</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900|Poppins:300,400,500,600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <style>
+         body {
+         font-family: raleway;
+         }
+         h4 {
+         font-size: 24px;
+         font-weight: 400;
+         }
+         .btn {
+         font-family: "Open Sans", sans-serif;
+         font-size: 11px;
+         letter-spacing: 1.5px;
+         text-transform: uppercase;
+         padding: 8px 16px;
+         background-color: #42474c;
+         color: #FFF;
+         display: inline-block;
+         box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+         text-decoration: none;
+         border: solid 2px #42474c;
+         border-radius: 2px;
+         -moz-border-radius: 2px;
+         -webkit-border-radius: 2px; }
+         .btn:hover {
+         color: #42474c;
+         background-color: #fff;
+         border-color: #42474c; }
+         .blog-sidebar .form_search input.form-control {
+         background-color: transparent;
+         border-color: #efeff3;
+         }
+         .btn-search {
+         background: 0 0;
+         border: 0;
+         position: absolute;
+         top: 36px;
+         right: 15px;
+         color: #848484;
+         cursor: pointer;
+         }
+         .blog-sidebar .form_search .btn-search {
+         right: 30px;
+         color: #222;
+         }
+         input.form-control, textarea.form-control, select.form-control {
+         border-radius: 0;
+         font-size: 14px;
+         padding: 13px 20px;
+         line-height: 24px;
+         border: 1px solid #f5f5f6;
+         background-color: #f5f5f6;
+         margin-bottom: 30px;
+         font-weight: 300;
+         }
+         .blog-sidebar .media .media-body {
+         padding: 0 20px;
+         }
+         .blog-sidebar .media .media-body h6 {
+         padding: 5px 0 10px;
+         }
+         .blog-sidebar h4 {
+         margin-top: 45px;
+         }
+         .list-group-item {
+         border-radius: 0!important;
+         font-size: 15px;
+         display: inline-block;
+         padding: 15px 0;
+         color: #8b8e93;
+         border: 0;
+         margin: 0;
+         border-bottom: 1px solid rgba(139,142,147,.25);
+         }
+         .blog-sidebar .media img {
+         height: 60px;
+         width: 60px;
+         }
+         .sidebar .list-group .list-group-item a {
+         font-size: 14px;
+         font-weight: 400;
+         position: relative;
+         color: #222;
+         padding-left: 0;
+         }
+         .blog-sidebar .tags {
+         margin-top: 30px;
+         }
+         .tags a {
+         padding: 4px 10px;
+         border-radius: 2px;
+         color: #fff;
+         display: inline-block;
+         margin-right: 5px;
+         margin-bottom: 8px;
+         border: 1px solid;
+         background-color: #42474c;
+         border-color: #42474c;
+         font-size: 12px;
+         }
+         .card {
+         border: none;
+         }
+         .card-title {
+         font-style: normal;
+         font-weight: 800;
+         font-size: 40px;
+         line-height: 1.4em;
+         font-family: 'Raleway', sans-serif;
+         letter-spacing: 2px;
+         text-align: inherit;
+         text-transform: uppercase;
+         color: #42474c;
+         }
+         .card-text {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 23px;
+         font-family: 'Raleway', sans-serif;
+         letter-spacing: 0em;
+         text-align: left;
+         text-transform: none;
+         color: #8d8d8d;
+         }
+         .card h4 {
+         color: #999999;
+         font-size: 15px;
+         font-weight: 500;
+         }
+         .post-meta {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         opacity: .7;
+         color: #000;
+         font-weight: 600;
+         }
+         .post-meta > li {
+         display: inline-block;
+         margin-right: 6px;
+         font-size: 12px;
+         }
+         .post .post-meta a, .post-meta a {
+         color: #000;
+         transition: all 0.5s;
+         font-weight: 600;
+         }
+         .media a {
+         color: #42474c;
+         font-size: 16px;
+         }
+         .media p {
+         font-size: 13px;
+         }
+         .media i {
+         font-size: 13px;
+         }
+      </style>
+   </head>
+   <body>
+       <section class="blog-template-2">
+      <div class="container">
+         <div class="row">
+            <!-- Blog Entries Column -->
+            <div class="col-md-8 pt-4">
+               <!-- Blog Post -->
+               <div class="card mb-5">
+                  <img class="card-img-top mb-4" src="http://learnwd.com/wp-content/uploads/2018/03/bp2.png" alt="Card image cap">
+                  <h4 class="mb-3">June 16, 2017 <span class="mx-1">/</span> Category</h4>
+                  <h2 class="card-title mb-3">Accelerating growth</h2>
+                  <div class="card-body p-0">
+                     <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                     <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+               </div>
+               <!-- Blog Post -->
+               <div class="card mb-5">
+                  <img class="card-img-top mb-4" src="http://learnwd.com/wp-content/uploads/2018/03/bp1.png" alt="Card image cap">
+                  <h4 class="mb-3">June 16, 2017 <span class="mx-1">/</span> Category</h4>
+                  <h2 class="card-title mb-3">Workplace Happiness</h2>
+                  <div class="card-body p-0">
+                     <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                     <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+               </div>
+               <!-- Blog Post -->
+               <div class="card mb-5">
+                  <img class="card-img-top mb-4" src="http://learnwd.com/wp-content/uploads/2018/03/bp3.png" alt="Card image cap">
+                  <h4 class="mb-3">June 16, 2017 <span class="mx-1">/</span> Category</h4>
+                  <h2 class="card-title mb-3">navigating the future</h2>
+                  <div class="card-body p-0">
+                     <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                     <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+               </div>
+               <!-- Pagination -->
+               <div class="col-12 p-0 mt-4 mb-4 text-right">
+                  <a href="#" class="btn btn-primary">OLDER POSTS <i class="fa fa-angle-double-right" style="font-size:14px;"></i></a>
+               </div>
+            </div>
+            <!-- Sidebar Widgets Column -->
+            <div class="col-lg-4 blog-sidebar sidebar pt-4">
+               <form class="form_search">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                  <button class="btn-search btn-search my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+               </form>
+               <h4>Recent News</h4>
+               <ul class="list-group">
+                  <li class="list-group-item"><a href="#">All Categories</a></li>
+                  <li class="list-group-item"><a href="#">Business Consulting</a></li>
+                  <li class="list-group-item"><a href="#">Financial Consulting</a></li>
+                  <li class="list-group-item"><a href="#">Social Media Marketing</a></li>
+                  <li class="list-group-item"><a href="#">Career &amp; Life Coaching</a></li>
+                  <li class="list-group-item"><a href="#">Entrepreneurship</a></li>
+               </ul>
+               <h4>Recent Posts</h4>
+               <div class="media pt-2">
+                  <img src="http://learnwd.com/wp-content/uploads/2018/03/thumb1.png" alt="img" class="">
+                  <div class="media-body">
+                     <h6><a href="#">Time Management </a></h6>
+                     <p><i class="fa fa-calendar" aria-hidden="true"></i> 02 Sep, 2017</p>
+                  </div>
+               </div>
+               <div class="media">
+                  <img src="http://learnwd.com/wp-content/uploads/2018/03/thumb2.png" alt="img" class="">
+                  <div class="media-body">
+                     <h6><a href="#">We Are Hiring</a></h6>
+                     <p><i class="fa fa-calendar" aria-hidden="true"></i> 29 Aug, 2017</p>
+                  </div>
+               </div>
+               <div class="media">
+                  <img src="http://learnwd.com/wp-content/uploads/2018/03/thumb3.png" alt="img" class="">
+                  <div class="media-body">
+                     <h6><a href="#">New Location</a></h6>
+                     <p><i class="fa fa-calendar" aria-hidden="true"></i> 31 Jul, 2017</p>
+                  </div>
+               </div>
+               <h4>Popular Tags</h4>
+               <div class="tags">
+                  <a href="#">Consultancy</a>
+                  <a href="#">Logistics</a>
+                  <a href="#">Development</a>
+                  <a href="#">Analysis</a>
+                  <a href="#">Business</a>
+                  <a href="#">Finance</a>
+                  <a href="#">Trends</a>
+                  <a href="#">Support</a>
+                  <a href="#">Video</a>
+                  <a href="#">Culture</a>
+                  <a href="#">Science</a>
+               </div>
+            </div>
+         </div>
+      </div>
+           </section>
+   </body>
+</html>
